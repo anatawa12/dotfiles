@@ -6,6 +6,7 @@ tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
 tap "jeffreywildman/virt-manager"
+tap "anatawa12/cask"
 cask "adoptopenjdk"
 cask "adoptopenjdk8"
 cask "osxfuse"
@@ -100,10 +101,29 @@ cask "istat-menus"
 cask "java"
 cask "jd-gui"
 cask "visual-studio-code"
+cask "unity-hub"
+cask "twitch"
+cask "mi"
+cask "cyberduck"
+cask "discord"
+cask "google-chrome"
+cask "google-japanese-ime"
+cask "iterm2"
+cask "jetbrains-toolbox"
+cask "metasequoia"
+cask "brother-p-touch-editor"
+cask "parallels12"
+cask "qblocker"
+cask "slack"
+cask "the-unarchiver"
+cask "hex-fiend"
+cask "visual-studio-code"
+cask "visual-studio"
+cask "vlc"
+cask "grandperspective"
 mas "Affinity Designer", id: 824171161
 mas "Affinity Photo", id: 824183456
 mas "Apple Configurator 2", id: 1037126344
-mas "DfontSplitter", id: 1470820747
 mas "Display Menu", id: 549083868
 mas "GarageBand", id: 682658836
 mas "iMovie", id: 408981434
