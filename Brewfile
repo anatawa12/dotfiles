@@ -64,7 +64,6 @@ brew "ngircd", restart_service: true, link: false
 brew "nkf"
 brew "node", link: false
 brew "node@10"
-brew "node@8"
 brew "php"
 brew "pipenv"
 brew "postgresql"
