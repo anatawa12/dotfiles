@@ -24,7 +24,8 @@ if which pyenv > /dev/null; then
     eval "$(pyenv init -)"; 
 fi
 
-# my tools add_path "$HOME/bin"
+# my tools
+add_path "$HOME/bin"
 
 #vcs info
 autoload -Uz vcs_info
