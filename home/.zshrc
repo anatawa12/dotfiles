@@ -48,7 +48,13 @@ PROMPT='%B%F{green}anatawa12%b%f:%B%F{blue}%~%B%F{red}${vcs_info_msg_0_}%b%f $ '
 
 java_up ()
 {
-    export JAVA_HOME=$(/usr/libexec/java_home -v $1)
+    case "$1" in
+        "-V" ) /usr/libexec/java_home -V ;;
+        "default" ) java_up 1.8 ;;
+        * ) export JAVA_HOME=$(/usr/libexec/java_home -v $1)
+            java -version
+            ;;
+    esac
 }
 
 # Add .NET Core SDK tools
