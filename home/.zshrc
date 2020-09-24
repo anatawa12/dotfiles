@@ -65,6 +65,17 @@ java_up ()
 # Add .NET Core SDK tools
 add_path "/Users/anatawa12/.dotnet/tools"
 
+# zsh parameter completion for the dotnet CLI
+
+_dotnet_zsh_complete()
+{
+  local completions=("$(dotnet complete "$words")")
+
+  reply=( "${(ps:\n:)completions}" )
+}
+
+compctl -K _dotnet_zsh_complete dotnet
+
 # go lang settings
 export GOPATH=$HOME/go
 add_path "$GOPATH/bin"
