@@ -56,7 +56,8 @@ java_up ()
     case "$1" in
         "-V" ) /usr/libexec/java_home -V ;;
         "default" ) java_up 1.8 ;;
-        * ) export JAVA_HOME=$(/usr/libexec/java_home -v $1)
+        * ) unset JAVA_HOME
+            export JAVA_HOME=$(/usr/libexec/java_home -v $1)
             java -version
             ;;
     esac
