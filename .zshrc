@@ -81,8 +81,6 @@ compctl -K _dotnet_zsh_complete dotnet
 export GOPATH=$HOME/go
 add_path "$GOPATH/bin"
 
-add_path "."
-
 # use gnu tools
 add_path_before "/usr/local/opt/grep/libexec/gnubin"
 add_path_before "/usr/local/opt/coreutils/libexec/gnubin"
