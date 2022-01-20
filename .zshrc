@@ -82,8 +82,8 @@ export GOPATH=$HOME/go
 add_path "$GOPATH/bin"
 
 # use gnu tools
-add_path_before "/usr/local/opt/grep/libexec/gnubin"
-add_path_before "/usr/local/opt/coreutils/libexec/gnubin"
+add_path_before "$(brew --prefix)/opt/grep/libexec/gnubin"
+add_path_before "$(brew --prefix)/opt/coreutils/libexec/gnubin"
 
 # utility to launch iterm new window
 if type open > /dev/null ; then
