@@ -20,5 +20,3 @@ for path in `find . -type f | grep -v -i '.ds_store'`; do
 done
 
 cd $DIR
-
-brew bundle
