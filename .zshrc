@@ -48,7 +48,7 @@ zstyle ':vcs_info:*' actionformats '[%b|%a]'
 
 precmd () { vcs_info }
 
-PROMPT='%B%F{green}anatawa12%b%f:%B%F{blue}%~%B%F{red}${vcs_info_msg_0_}%b%f $ '
+PROMPT='%B%F{green}%n@%m%b%f:%B%F{blue}%~%B%F{red}${vcs_info_msg_0_}%b%f $ '
 #PROMPT=$PROMPT'${vcs_info_msg_0_} %{${fg[red]}%}%}$%{${reset_color}%} '
 
 java_up ()
