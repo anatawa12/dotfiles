@@ -29,6 +29,11 @@ if which pyenv > /dev/null; then
     eval "$(pyenv init -)"; 
 fi
 
+# tj/n
+
+export N_PREFIX=/opt/n
+add_path "$N_PREFIX/bin"
+
 # my tools
 add_path "$HOME/bin"
 
