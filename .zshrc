@@ -98,3 +98,11 @@ if type open > /dev/null ; then
 fi
 
 java_up 1.8
+
+# opam configuration
+[[ ! -r /Users/anatawa12/.opam/opam-init/init.zsh ]] || source /Users/anatawa12/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
+
+# I often forget -j
+# if you want to use make directly, use \make
+
+alias make="\make -j8"
