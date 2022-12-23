@@ -68,7 +68,7 @@ java_up ()
 }
 
 # Add .NET Core SDK tools
-add_path "/Users/anatawa12/.dotnet/tools"
+add_path "$HOME/.dotnet/tools"
 
 # zsh parameter completion for the dotnet CLI
 
@@ -99,7 +99,7 @@ fi
 java_up 1.8
 
 # opam configuration
-[[ ! -r /Users/anatawa12/.opam/opam-init/init.zsh ]] || source /Users/anatawa12/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
+[[ ! -r "$HOME/.opam/opam-init/init.zsh" ]] || source "$HOME/.opam/opam-init/init.zsh" > /dev/null 2> /dev/null
 
 # use nano if exists
 if which nano > /dev/null; then
