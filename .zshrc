@@ -24,7 +24,6 @@ if which rbenv > /dev/null; then
 fi
 
 # pyenv
-export PYENV_ROOT=/usr/local/var/pyenv
 if which pyenv > /dev/null; then 
     eval "$(pyenv init -)"; 
 fi
