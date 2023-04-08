@@ -92,7 +92,11 @@ add_path_before "$(brew --prefix)/opt/coreutils/libexec/gnubin"
 # utility to launch iterm new window
 if type open > /dev/null ; then
   iterm() {
-    open -a 'iterm' .
+    if [ "$#" -eq 0 ]; then
+      open -a 'iterm' .
+    else
+      open -a 'iterm' "$@"
+    fi
   }
 fi
 
