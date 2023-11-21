@@ -28,6 +28,10 @@ if which pyenv > /dev/null; then
     eval "$(pyenv init -)"; 
 fi
 
+if which vrc-get > /dev/null; then
+    eval "$(vrc-get completion zsh)"
+fi
+
 # tj/n
 
 export N_PREFIX=/opt/n
