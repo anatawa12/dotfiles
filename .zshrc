@@ -32,6 +32,10 @@ if which vrc-get > /dev/null; then
     eval "$(vrc-get completion zsh)"
 fi
 
+if witch deno > /dev/null; then
+    eval "$(deno completions zsh)"
+fi
+
 # tj/n
 
 export N_PREFIX=/opt/n
