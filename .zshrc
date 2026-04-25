@@ -41,6 +41,11 @@ fi
 export N_PREFIX=/opt/n
 add_path "$N_PREFIX/bin"
 
+if which pnpm > /dev/null; then
+    # COREPACK_ENABLE_AUTO_PIN=0 because shell can be lanched on projects without packageManager field
+    eval "$(COREPACK_ENABLE_AUTO_PIN=0 pnpm completion zsh)"
+fi
+
 # my tools
 add_path "$HOME/bin"
 
