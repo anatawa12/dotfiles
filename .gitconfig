@@ -1,0 +1,33 @@
+[user]
+	name = anatawa12
+	email = anatawa12@icloud.com
+	signingkey = BD2F16922830A7DC
+[commit]
+	gpgsign = true
+[init]
+	defaultBranch = master
+[core]
+	autocrlf = input
+[pull]
+	ff = only
+[credential]
+	helper = 
+	helper = /usr/local/share/gcm-core/git-credential-manager
+[alias]
+	vrc = !/Users/anatawa12/.cargo/bin/git-vrc
+[merge]
+	ff = false
+	conflictstyle = diff3
+[credential "https://dev.azure.com"]
+	useHttpPath = true
+[filter "vrc"]
+	smudge = git vrc smudge --file %f
+	clean = git vrc clean --file %f
+	required = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[url "https://github.com/"]
+	insteadOf = git@github.com:
