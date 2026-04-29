@@ -47,7 +47,7 @@ if which pnpm > /dev/null; then
 fi
 
 # my tools
-add_path "$HOME/bin"
+add_path "$HOME/.local/bin"
 
 #vcs info
 autoload -Uz vcs_info
